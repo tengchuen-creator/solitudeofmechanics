@@ -52,7 +52,7 @@ export default async function WatchPage({ params }: Props) {
               <div><dt>Movement</dt><dd>—</dd></div>
             </dl>
             <div className="watch-section">
-              <div className="watch-section__label">Description</div>
+              <div className="watch-section__label">Essay</div>
               <p>Content coming soon. Add this watch in the Sanity Studio at /studio.</p>
             </div>
             <Link href="/collection" className="back-link">
@@ -123,17 +123,17 @@ export default async function WatchPage({ params }: Props) {
             ))}
           </dl>
 
-          {watch.description && (
+          {watch.notes && (
             <div className="watch-section">
-              <div className="watch-section__label">Description</div>
-              <SanityPortableText value={watch.description} />
+              <div className="watch-section__label">Provenance</div>
+              <SanityPortableText value={watch.notes} />
             </div>
           )}
 
-          {watch.notes && (
+          {watch.description && (
             <div className="watch-section">
-              <div className="watch-section__label">Notes</div>
-              <SanityPortableText value={watch.notes} />
+              <div className="watch-section__label">Essay</div>
+              <SanityPortableText value={watch.description} />
             </div>
           )}
 

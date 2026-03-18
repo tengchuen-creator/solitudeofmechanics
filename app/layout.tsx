@@ -4,6 +4,9 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import './globals.css'
 
+// Set to false when ready to launch the full site
+export const COMING_SOON = true
+
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
   weight: ['300', '400', '500'],
@@ -21,7 +24,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'Solitude of Mechanics',
-  description: 'A private study of watchmaking',
+  description: 'A love letter to watchmaking',
 }
 
 export default function RootLayout({
@@ -32,9 +35,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
       <body>
-        <Navigation />
+        {!COMING_SOON && <Navigation />}
         {children}
-        <Footer />
+        {!COMING_SOON && <Footer />}
       </body>
     </html>
   )

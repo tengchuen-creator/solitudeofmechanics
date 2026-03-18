@@ -61,9 +61,9 @@ export default function CollectionFilter({ watches }: { watches: Watch[] }) {
                   <Image
                     src={watch.imageUrl}
                     alt={watch.name}
-                    width={400}
-                    height={500}
-                    style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                    fill
+                    sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    style={{ objectFit: 'cover', objectPosition: 'center' }}
                   />
                 ) : (
                   <span>Photograph</span>

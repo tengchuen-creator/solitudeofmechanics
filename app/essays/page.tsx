@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { client } from '@/sanity/client'
 import { allEssaysQuery } from '@/sanity/lib/queries'
 import Link from 'next/link'
@@ -20,10 +22,12 @@ export const metadata = {
 }
 
 export default async function EssaysPage() {
-  let essays = await client.fetch(allEssaysQuery).catch(() => [])
-  if (!essays || essays.length === 0) {
-    essays = PLACEHOLDER_ESSAYS
-  }
+  const sanityEssays = await client.fetch(allEssaysQuery).catch(() => []) || []
+  const sanityTitles = new Set(sanityEssays.map((e: any) => e.title.toLowerCase()))
+  const remainingPlaceholders = PLACEHOLDER_ESSAYS.filter(
+    p => !sanityTitles.has(p.title.toLowerCase())
+  )
+  const essays = [...sanityEssays, ...remainingPlaceholders]
 
   return (
     <div className="container">
