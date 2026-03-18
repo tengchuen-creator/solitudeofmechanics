@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "som-website",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "cd /Users/tengchuenwee/Documents/my-research/outputs/website && export NVM_DIR=\"$HOME/.nvm\" && . \"$NVM_DIR/nvm.sh\" && npx next dev -p 3001"],
+      "port": 3001
+    }
+  ]
+}

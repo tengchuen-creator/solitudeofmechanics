@@ -7,8 +7,6 @@
    Serif: Cormorant Garamond | Sans: Inter
    ============================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap');
-
 /* --- Reset --- */
 
 *, *::before, *::after {
@@ -27,8 +25,8 @@
     --accent: #8A7D6B;
     --accent-hover: #A69886;
     --border: #222020;
-    --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
-    --sans: 'Inter', -apple-system, system-ui, sans-serif;
+    --serif: var(--font-cormorant), Georgia, 'Times New Roman', serif;
+    --sans: var(--font-inter), -apple-system, system-ui, sans-serif;
     --gutter: clamp(24px, 5vw, 80px);
     --max-width: 1200px;
     --max-width-wide: 1600px;
@@ -175,7 +173,8 @@ nav.scrolled {
 }
 
 /* Mobile only — no hamburger on desktop */
-.nav-toggle {
+.nav-toggle,
+.nav-close {
     display: none;
 }
 
@@ -226,6 +225,7 @@ nav.scrolled {
     }
 
     .nav-close {
+        display: block;
         position: absolute;
         top: 24px;
         right: 24px;
@@ -650,6 +650,13 @@ nav.scrolled {
     width: 260px;
     aspect-ratio: 4 / 3;
     background: var(--bg-card);
+    overflow: hidden;
+}
+
+.manufacture-entry__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .manufacture-entry__content {
@@ -712,6 +719,13 @@ nav.scrolled {
     aspect-ratio: 21 / 9;
     background: var(--bg-card);
     margin-bottom: 64px;
+    overflow: hidden;
+}
+
+.manufacture-profile__hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .manufacture-profile__name {
