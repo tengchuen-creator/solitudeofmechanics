@@ -8,21 +8,16 @@ export function middleware(request: NextRequest) {
 
   const path = request.nextUrl.pathname
 
-  // Allow: home page, studio (CMS), static assets, API routes
+  // Allow: home page, studio, static assets, API routes, images
   if (
     path === '/' ||
     path.startsWith('/studio') ||
     path.startsWith('/_next') ||
-    path.startsWith('/api') ||
-    path.includes('.')
+    path.startsWith('/api')
   ) {
     return NextResponse.next()
   }
 
-  // Block everything else — redirect to home
+  // Redirect everything else to home
   return NextResponse.redirect(new URL('/', request.url))
-}
-
-export const config = {
-  matcher: ['/((?!_next/static|_next/image|favicon.ico).*)'],
 }
