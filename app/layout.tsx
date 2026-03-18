@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import './globals.css'
 
 // Set to false when ready to launch the full site
-export const COMING_SOON = true
+const COMING_SOON = true
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
