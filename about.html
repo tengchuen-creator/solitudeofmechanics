@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About &mdash; Solitude of Mechanics</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="nav-logo">Solitude of Mechanics</a>
+        <button class="nav-toggle" onclick="toggleNav()">Menu</button>
+        <ul class="nav-links" id="navLinks">
+            <button class="nav-close" onclick="toggleNav()">Close</button>
+            <li><a href="collection.html">Collection</a></li>
+            <li><a href="essays.html">Essays</a></li>
+            <li><a href="manufacturers.html">Manufacturers</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container--reading">
+        <div class="about">
+
+            <h1 class="fade-in" style="margin-bottom: 48px;">About</h1>
+
+            <div class="about__body fade-in">
+                <p>Your text here. Three to four paragraphs maximum. First person. Philosophical. No photograph. Write about the intent behind the collection and the archive.</p>
+
+                <p>Why you collect. Not the market logic or the investment thesis, but the actual reason you are drawn to mechanical watches. What they represent to you. What you see in them that others seem to miss or have stopped looking for.</p>
+
+                <p>What this archive is for. Not a shop, not a blog, not a portfolio. A permanent record. A private library made selectively public. Explain why it exists and what it is meant to preserve.</p>
+
+                <p class="about__sig">TC</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <span class="footer-left">&copy; Solitude of Mechanics</span>
+        <span class="footer-right"><a href="https://instagram.com/solitudeofmechanics" target="_blank" rel="noopener">@solitudeofmechanics</a></span>
+    </footer>
+
+    <script>
+    function toggleNav() {
+        document.getElementById('navLinks').classList.toggle('open');
+    }
+    window.addEventListener('scroll', () => {
+        document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 60);
+    });
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manufacture Profiles &mdash; Solitude of Mechanics</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="nav-logo">Solitude of Mechanics</a>
+        <button class="nav-toggle" onclick="toggleNav()">Menu</button>
+        <ul class="nav-links" id="navLinks">
+            <button class="nav-close" onclick="toggleNav()">Close</button>
+            <li><a href="collection.html">Collection</a></li>
+            <li><a href="essays.html">Essays</a></li>
+            <li><a href="manufacturers.html" class="active">Manufacturers</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <h1 class="fade-in">Manufacture Profiles</h1>
+            <p class="fade-in">The houses and independents whose work defines the collection.</p>
+        </div>
+
+        <div class="manufacture-list">
+
+            <div class="manufacture-entry fade-in">
+                <div class="manufacture-entry__image"></div>
+                <div class="manufacture-entry__content">
+                    <h2 class="manufacture-entry__name">A. Lange &amp; S&ouml;hne</h2>
+                    <div class="manufacture-entry__meta">Glash&uuml;tte, Germany &middot; Founded 1845</div>
+                    <p class="manufacture-entry__desc">The philosophy, history, and your personal relationship with the maker. What Lange means to your collection and why their approach to finishing, movement architecture, and restraint defines Saxon watchmaking at its highest level.</p>
+                    <a href="manufacturer.html" class="manufacture-entry__link">Read profile</a>
+                </div>
+            </div>
+
+            <div class="manufacture-entry fade-in">
+                <div class="manufacture-entry__image"></div>
+                <div class="manufacture-entry__content">
+                    <h2 class="manufacture-entry__name">Patek Philippe</h2>
+                    <div class="manufacture-entry__meta">Geneva, Switzerland &middot; Founded 1839</div>
+                    <p class="manufacture-entry__desc">Your relationship with the most established name in collecting. What draws you to specific references, the culture surrounding the brand, and the distance between reputation and the actual experience of ownership.</p>
+                    <a href="manufacturer.html" class="manufacture-entry__link">Read profile</a>
+                </div>
+            </div>
+
+            <div class="manufacture-entry fade-in">
+                <div class="manufacture-entry__image"></div>
+                <div class="manufacture-entry__content">
+                    <h2 class="manufacture-entry__name">Vacheron Constantin</h2>
+                    <div class="manufacture-entry__meta">Geneva, Switzerland &middot; Founded 1755</div>
+                    <p class="manufacture-entry__desc">The oldest continuously operating manufacture. Why certain references from the 1970s and the Overseas line represent a different kind of Genevan watchmaking: less visible, more considered, and often overlooked.</p>
+                    <a href="manufacturer.html" class="manufacture-entry__link">Read profile</a>
+                </div>
+            </div>
+
+            <div class="manufacture-entry fade-in">
+                <div class="manufacture-entry__image"></div>
+                <div class="manufacture-entry__content">
+                    <h2 class="manufacture-entry__name">Rolex</h2>
+                    <div class="manufacture-entry__meta">Geneva, Switzerland &middot; Founded 1905</div>
+                    <p class="manufacture-entry__desc">What Rolex means beyond the market. The specific references that earn a place in a collection built on mechanical conviction, and why the most common brand in watchmaking still produces objects worth studying.</p>
+                    <a href="manufacturer.html" class="manufacture-entry__link">Read profile</a>
+                </div>
+            </div>
+
+            <div class="manufacture-entry fade-in">
+                <div class="manufacture-entry__image"></div>
+                <div class="manufacture-entry__content">
+                    <h2 class="manufacture-entry__name">Grand Seiko</h2>
+                    <div class="manufacture-entry__meta">Suwa &amp; Shizukuishi, Japan &middot; Founded 1960</div>
+                    <p class="manufacture-entry__desc">Precision without pretension. The Spring Drive, the Zaratsu polishing, and the philosophical argument for a Japanese approach to high watchmaking that answers to no one in Geneva.</p>
+                    <a href="manufacturer.html" class="manufacture-entry__link">Read profile</a>
+                </div>
+            </div>
+
+            <div class="manufacture-entry fade-in">
+                <div class="manufacture-entry__image"></div>
+                <div class="manufacture-entry__content">
+                    <h2 class="manufacture-entry__name">F.P. Journe</h2>
+                    <div class="manufacture-entry__meta">Geneva, Switzerland &middot; Founded 1999</div>
+                    <p class="manufacture-entry__desc">The independent who became an institution. What the early brass-movement pieces meant, why the market transformation changed the relationship, and what remains after you let the collection go.</p>
+                    <a href="manufacturer.html" class="manufacture-entry__link">Read profile</a>
+                </div>
+            </div>
+
+            <div class="manufacture-entry fade-in">
+                <div class="manufacture-entry__image"></div>
+                <div class="manufacture-entry__content">
+                    <h2 class="manufacture-entry__name">Independents</h2>
+                    <div class="manufacture-entry__meta">Dufour &middot; Voutilainen &middot; Rexhepi &middot; Others</div>
+                    <p class="manufacture-entry__desc">The watchmakers working alone or in small ateliers. Philippe Dufour, Kari Voutilainen, Rexhep Rexhepi, and the handful of others whose work exists outside the system entirely.</p>
+                    <a href="manufacturer.html" class="manufacture-entry__link">Read profile</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <span class="footer-left">&copy; Solitude of Mechanics</span>
+        <span class="footer-right"><a href="https://instagram.com/solitudeofmechanics" target="_blank" rel="noopener">@solitudeofmechanics</a></span>
+    </footer>
+
+    <script>
+    function toggleNav() {
+        document.getElementById('navLinks').classList.toggle('open');
+    }
+    window.addEventListener('scroll', () => {
+        document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 60);
+    });
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>

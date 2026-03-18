@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A. Lange &amp; S&ouml;hne &mdash; Solitude of Mechanics</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="nav-logo">Solitude of Mechanics</a>
+        <button class="nav-toggle" onclick="toggleNav()">Menu</button>
+        <ul class="nav-links" id="navLinks">
+            <button class="nav-close" onclick="toggleNav()">Close</button>
+            <li><a href="collection.html">Collection</a></li>
+            <li><a href="essays.html">Essays</a></li>
+            <li><a href="manufacturers.html" class="active">Manufacturers</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Full-width hero image placeholder -->
+    <div class="manufacture-profile__hero"></div>
+
+    <div class="container">
+        <div class="manufacture-profile">
+
+            <a href="manufacturers.html" class="back-link">Back to Manufacturers</a>
+
+            <h1 class="manufacture-profile__name">A. Lange &amp; S&ouml;hne</h1>
+            <div class="manufacture-profile__location">Glash&uuml;tte, Germany &middot; Founded 1845</div>
+
+            <div class="manufacture-profile__body">
+                <p>Your text here. This is where you write about the philosophy of the house, its place in watchmaking history, and what it means to you personally. The relationship between a collector and a manufacture is built over years of handling the work, studying the movements, and understanding the decisions that went into each calibre.</p>
+
+                <p>Write about the specific references in your collection from this maker. What drew you to them, what you discovered after living with them, and how they changed your understanding of what a watch can be.</p>
+
+                <p>Write about the people. The watchmakers, the designers, the culture of the place. What distinguishes their approach from every other house operating at this level.</p>
+
+                <p>End with where you stand today. What you still want from this maker, what you think they do better than anyone, and what remains to be understood.</p>
+            </div>
+
+            <a href="manufacturers.html" class="back-link" style="margin-top: 80px;">Back to Manufacturers</a>
+
+        </div>
+    </div>
+
+    <footer>
+        <span class="footer-left">&copy; Solitude of Mechanics</span>
+        <span class="footer-right"><a href="https://instagram.com/solitudeofmechanics" target="_blank" rel="noopener">@solitudeofmechanics</a></span>
+    </footer>
+
+    <script>
+    function toggleNav() {
+        document.getElementById('navLinks').classList.toggle('open');
+    }
+    window.addEventListener('scroll', () => {
+        document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 60);
+    });
+    </script>
+
+</body>
+</html>

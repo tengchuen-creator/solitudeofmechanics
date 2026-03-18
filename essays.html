@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essays &mdash; Solitude of Mechanics</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="nav-logo">Solitude of Mechanics</a>
+        <button class="nav-toggle" onclick="toggleNav()">Menu</button>
+        <ul class="nav-links" id="navLinks">
+            <button class="nav-close" onclick="toggleNav()">Close</button>
+            <li><a href="collection.html">Collection</a></li>
+            <li><a href="essays.html" class="active">Essays</a></li>
+            <li><a href="manufacturers.html">Manufacturers</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <h1 class="fade-in">Essays</h1>
+            <p class="fade-in">Long-form writing on the craft, the culture, and the quiet discipline of collecting.</p>
+        </div>
+
+        <ul class="essay-list">
+
+            <li class="essay-item fade-in">
+                <a href="essay.html">
+                    <div class="essay-item__top">
+                        <span class="essay-item__title">On the meaning of complications</span>
+                        <span class="essay-item__date">March 2026</span>
+                    </div>
+                    <p class="essay-item__desc">Why the most complex watches are really about conviction, not utility.</p>
+                </a>
+            </li>
+
+            <li class="essay-item fade-in">
+                <a href="essay.html">
+                    <div class="essay-item__top">
+                        <span class="essay-item__title">Why I sold my F.P. Journe collection</span>
+                        <span class="essay-item__date">February 2026</span>
+                    </div>
+                    <p class="essay-item__desc">What happens when the market catches up to your taste.</p>
+                </a>
+            </li>
+
+            <li class="essay-item fade-in">
+                <a href="essay.html">
+                    <div class="essay-item__top">
+                        <span class="essay-item__title">What my father&rsquo;s Submariner taught me</span>
+                        <span class="essay-item__date">January 2026</span>
+                    </div>
+                    <p class="essay-item__desc">On inheritance, sentiment, and the watches that outlive their owners.</p>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
+    <footer>
+        <span class="footer-left">&copy; Solitude of Mechanics</span>
+        <span class="footer-right"><a href="https://instagram.com/solitudeofmechanics" target="_blank" rel="noopener">@solitudeofmechanics</a></span>
+    </footer>
+
+    <script>
+    function toggleNav() {
+        document.getElementById('navLinks').classList.toggle('open');
+    }
+    window.addEventListener('scroll', () => {
+        document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 60);
+    });
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>

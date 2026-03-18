@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>222 &mdash; Vacheron Constantin &mdash; Solitude of Mechanics</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="nav-logo">Solitude of Mechanics</a>
+        <button class="nav-toggle" onclick="toggleNav()">Menu</button>
+        <ul class="nav-links" id="navLinks">
+            <button class="nav-close" onclick="toggleNav()">Close</button>
+            <li><a href="collection.html">Collection</a></li>
+            <li><a href="essays.html">Essays</a></li>
+            <li><a href="manufacturers.html">Manufacturers</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sequential photography — 3 to 8 images, edge to edge -->
+    <div class="watch-gallery">
+        <div class="watch-gallery__item watch-gallery__item--placeholder">
+            <span>Photograph 1 &mdash; Front dial</span>
+        </div>
+        <div class="watch-gallery__item watch-gallery__item--placeholder">
+            <span>Photograph 2 &mdash; Case profile</span>
+        </div>
+        <div class="watch-gallery__item watch-gallery__item--placeholder">
+            <span>Photograph 3 &mdash; Movement</span>
+        </div>
+        <div class="watch-gallery__item watch-gallery__item--placeholder">
+            <span>Photograph 4 &mdash; Detail</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="watch-content">
+
+            <div class="watch-content__maker">Vacheron Constantin</div>
+            <h1 class="watch-content__name">222</h1>
+            <div class="watch-content__ref">Ref. 44018</div>
+
+            <dl class="watch-specs">
+                <div>
+                    <dt>Maker</dt>
+                    <dd>Vacheron Constantin</dd>
+                </div>
+                <div>
+                    <dt>Reference</dt>
+                    <dd>44018</dd>
+                </div>
+                <div>
+                    <dt>Name</dt>
+                    <dd>222</dd>
+                </div>
+                <div>
+                    <dt>Year Produced</dt>
+                    <dd>1977</dd>
+                </div>
+                <div>
+                    <dt>Case Material</dt>
+                    <dd>Stainless steel</dd>
+                </div>
+                <div>
+                    <dt>Case Diameter</dt>
+                    <dd>37 mm</dd>
+                </div>
+                <div>
+                    <dt>Movement</dt>
+                    <dd>Calibre 1120</dd>
+                </div>
+                <div>
+                    <dt>Complications</dt>
+                    <dd>Date</dd>
+                </div>
+            </dl>
+
+            <!-- Description -->
+            <div class="watch-section">
+                <div class="watch-section__label">Description</div>
+                <p>Your description here. This section is for a factual, detailed account of the watch itself: the history of the reference, the context in which it was created, the technical details that matter to a collector, and why this particular example is notable within its production run.</p>
+            </div>
+
+            <!-- Notes -->
+            <div class="watch-section">
+                <div class="watch-section__label">Notes</div>
+                <p>Your personal notes here. This section is for your own voice: how the watch came into the collection, what it means to you, what you notice when you wear it, and the quiet details that only reveal themselves over time.</p>
+            </div>
+
+            <a href="collection.html" class="back-link">Back to The Collection</a>
+
+        </div>
+    </div>
+
+    <footer>
+        <span class="footer-left">&copy; Solitude of Mechanics</span>
+        <span class="footer-right"><a href="https://instagram.com/solitudeofmechanics" target="_blank" rel="noopener">@solitudeofmechanics</a></span>
+    </footer>
+
+    <script>
+    function toggleNav() {
+        document.getElementById('navLinks').classList.toggle('open');
+    }
+    window.addEventListener('scroll', () => {
+        document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 60);
+    });
+    </script>
+
+</body>
+</html>

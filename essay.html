@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On the meaning of complications &mdash; Solitude of Mechanics</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="nav-logo">Solitude of Mechanics</a>
+        <button class="nav-toggle" onclick="toggleNav()">Menu</button>
+        <ul class="nav-links" id="navLinks">
+            <button class="nav-close" onclick="toggleNav()">Close</button>
+            <li><a href="collection.html">Collection</a></li>
+            <li><a href="essays.html" class="active">Essays</a></li>
+            <li><a href="manufacturers.html">Manufacturers</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container--reading">
+        <article class="essay-reading">
+
+            <a href="essays.html" class="back-link">Back to Essays</a>
+
+            <div class="essay-reading__date">March 2026</div>
+            <h1 class="essay-reading__title">On the meaning of complications</h1>
+
+            <div class="essay-reading__body">
+                <p>Your essay text here. This template provides clean reading typography with wide margins and generous line height. The first letter of the opening paragraph will be styled as a drop cap automatically.</p>
+
+                <p>Continue writing here. Each paragraph receives proper spacing. The reading column is held to 680 pixels maximum width to maintain a comfortable line length of roughly 65 characters, which is optimal for sustained reading.</p>
+
+                <p>Add as many paragraphs as you need. The layout is deliberately simple: no sidebars, no pull quotes, no distractions. Just text on a dark field, the way it should be read.</p>
+            </div>
+
+            <a href="essays.html" class="back-link" style="margin-top: 80px;">Back to Essays</a>
+
+        </article>
+    </div>
+
+    <footer>
+        <span class="footer-left">&copy; Solitude of Mechanics</span>
+        <span class="footer-right"><a href="https://instagram.com/solitudeofmechanics" target="_blank" rel="noopener">@solitudeofmechanics</a></span>
+    </footer>
+
+    <script>
+    function toggleNav() {
+        document.getElementById('navLinks').classList.toggle('open');
+    }
+    window.addEventListener('scroll', () => {
+        document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 60);
+    });
+    </script>
+
+</body>
+</html>
