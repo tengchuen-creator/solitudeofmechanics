@@ -6,8 +6,8 @@ import { schemaTypes } from './sanity/schemas'
 export default defineConfig({
   name: 'solitude-of-mechanics',
   title: 'Solitude of Mechanics',
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || '',
-  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
+  projectId: 'ihki5wi0',
+  dataset: 'production',
   basePath: '/studio',
   plugins: [structureTool(), visionTool()],
   schema: {
