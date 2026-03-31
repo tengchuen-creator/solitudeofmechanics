@@ -51,9 +51,9 @@ export default async function CollectionPage() {
 
       <FadeIn>
         <div className="collection-feature-link">
-          <Link href="/the-92-set">
+          <Link href="/the-last-set">
             <span className="collection-feature-link__label">Featured</span>
-            <span className="collection-feature-link__title">The 92 Set</span>
+            <span className="collection-feature-link__title">The Last Set</span>
             <span className="collection-feature-link__sub">Three A. Lange &amp; Söhne limited pieces. Three different complications. One matching number.</span>
           </Link>
         </div>
