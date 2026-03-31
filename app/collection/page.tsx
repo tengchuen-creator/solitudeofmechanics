@@ -4,6 +4,7 @@ import { client } from '@/sanity/client'
 import { allWatchesQuery } from '@/sanity/lib/queries'
 import CollectionFilter from '@/components/CollectionFilter'
 import FadeIn from '@/components/FadeIn'
+import Link from 'next/link'
 
 // Placeholder data used when Sanity has no content yet
 const PLACEHOLDER_WATCHES = [
@@ -47,6 +48,16 @@ export default async function CollectionPage() {
         </FadeIn>
       </div>
       <CollectionFilter watches={watches} />
+
+      <FadeIn>
+        <div className="collection-feature-link">
+          <Link href="/the-92-set">
+            <span className="collection-feature-link__label">Featured</span>
+            <span className="collection-feature-link__title">The 92 Set</span>
+            <span className="collection-feature-link__sub">Three A. Lange &amp; Söhne pieces. Same number. 092 of 100.</span>
+          </Link>
+        </div>
+      </FadeIn>
     </div>
   )
 }
