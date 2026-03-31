@@ -64,16 +64,19 @@ export default async function The92SetPage() {
         <div className="set-intro">
           <FadeIn>
             <p>
-              In 2015, A. Lange & Söhne produced three watches in limited series of 100. The Datograph Perpetual Tourbillon. The Lange 1 Ewiger Kalender in honey gold. The Lange 1 Ewiger Kalender in white gold with salmon dial. Each numbered individually, each independent.
+              The Lange boutique called and said they had something to show me. Three pieces from separate limited series of 100 — the Datograph Perpetual Tourbillon, the Lange 1 Ewiger Kalender in honey gold, the Lange 1 Ewiger Kalender in white gold with salmon dial. All numbered 092. The last complete threesome at that number. They were offering the set.
             </p>
             <p>
-              I own number 092 of all three.
+              I hesitated. I knew the Datograph. I knew the honey gold Ewiger Kalender. The Lange 1 was less familiar to me — I had never spent real time with one, and I was not sure I would want to.
             </p>
             <p>
-              This was not planned. The first piece arrived through a relationship, the second through persistence, the third through a coincidence I did not recognise until I held it and looked at the caseback. When the number appeared — 092 — for the third time, in a different metal, a different complication, a different dial — something settled.
+              Coincidentally, they had the salmon piece in the store that day. They put it on the counter. I picked it up.
             </p>
             <p>
-              A set of one is a watch. A set of three, with the same number, from the same year, from the same house, made within the same walls by the same hands — that is something else. It does not have a name in the catalogues because it was never intended to happen.
+              It instantly became the one I liked most out of the three.
+            </p>
+            <p>
+              That is the story of this set. Not a hunt across years or a number noticed on a caseback after the fact. A single afternoon, a single decision, and a watch I did not expect to love becoming the reason I said yes.
             </p>
           </FadeIn>
         </div>
@@ -157,13 +160,13 @@ export default async function The92SetPage() {
         <div className="set-closing">
           <FadeIn>
             <p>
-              Lange numbers each piece of a limited series on the caseback, not the dial. The number is private — visible only to the owner, only when the watch is off the wrist. It is not meant to be seen by anyone else. I knew, when I checked the back of the third piece and saw 092, that this set would stay together.
+              Lange numbers each piece of a limited series on the caseback. The number is private — visible only when the watch is off the wrist, only to the person holding it. 092 appears on the back of all three.
             </p>
             <p>
-              092 of 100. Three times.
+              The set has stayed together since that afternoon. It will continue to.
             </p>
             <p>
-              Some coincidences earn a shelf.
+              The watch you hesitate over is often the one that matters most.
             </p>
           </FadeIn>
           <FadeIn>
