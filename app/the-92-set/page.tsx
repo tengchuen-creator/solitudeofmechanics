@@ -55,7 +55,7 @@ export default async function The92SetPage() {
         <FadeIn>
           <div className="set-hero__eyebrow">A. Lange &amp; Söhne</div>
           <h1 className="set-hero__title">The 92 Set</h1>
-          <p className="set-hero__sub">092 of 100, three times.</p>
+          <p className="set-hero__sub">Three pieces. One number. Complete.</p>
         </FadeIn>
       </div>
 
@@ -64,7 +64,7 @@ export default async function The92SetPage() {
         <div className="set-intro">
           <FadeIn>
             <p>
-              The Lange boutique called and said they had something to show me. Three pieces from separate limited series of 100 — the Datograph Perpetual Tourbillon, the Lange 1 Ewiger Kalender in honey gold, the Lange 1 Ewiger Kalender in white gold with salmon dial. All numbered 092. The last complete threesome at that number. They were offering the set.
+              The Lange boutique called and said they had something to show me. Three pieces from separate limited series of 100 — the Datograph Perpetual Tourbillon, the Lange 1 Ewiger Kalender in honey gold, the Lange 1 Ewiger Kalender in white gold with salmon dial. All carrying the same number. The last complete threesome at that number. They were offering the set.
             </p>
             <p>
               I hesitated. I knew the Datograph. I knew the honey gold Ewiger Kalender. The Lange 1 was less familiar to me — I had never spent real time with one, and I was not sure I would want to.
@@ -160,7 +160,7 @@ export default async function The92SetPage() {
         <div className="set-closing">
           <FadeIn>
             <p>
-              Lange numbers each piece of a limited series on the caseback. The number is private — visible only when the watch is off the wrist, only to the person holding it. 092 appears on the back of all three.
+              Lange numbers each piece of a limited series on the caseback. The number is private — visible only when the watch is off the wrist, only to the person holding it. The same number appears on the back of all three.
             </p>
             <p>
               The set has stayed together since that afternoon. It will continue to.

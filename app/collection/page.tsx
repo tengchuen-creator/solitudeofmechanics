@@ -54,7 +54,7 @@ export default async function CollectionPage() {
           <Link href="/the-92-set">
             <span className="collection-feature-link__label">Featured</span>
             <span className="collection-feature-link__title">The 92 Set</span>
-            <span className="collection-feature-link__sub">Three A. Lange &amp; Söhne pieces. Same number. 092 of 100.</span>
+            <span className="collection-feature-link__sub">Three A. Lange &amp; Söhne limited pieces. Three different complications. One matching number.</span>
           </Link>
         </div>
       </FadeIn>
